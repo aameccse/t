@@ -1,0 +1,136 @@
+﻿<html lang="en">
+<head>
+<title>AAMEC</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="img/jpg" href="s2.jpg" />
+<link rel="stylesheet" type="text/css" href="style.css" /></head>
+	
+<body onload="digi()">
+<script src="t.js"></script>
+
+<header><section><div style="float:left;height:100px;">                          
+<img src="logo.png" height="152px" width="110px"  /></div> 
+<div style="float:right;"><br>ANJALAI AMMAL MAHALINGAM ENGINEERING COLLEGE - KOVILVENNI 614403<br>
+DEPARTMENT OF COMPUTER SCIENCE</div></section>
+</header>
+<br>
+<ul class="sidenav">
+  <li><a  class="tablinks" onclick="openTab(event, '01')" id="defaultOpen" >Home</a></li>
+  <li><a  class="tablinks" onclick="openTab(event, 's')"  >Syllabus</a></li>
+  <li><a class="tablinks" onclick="openTab(event, 'L')">Library</a></li>
+  <li><a class="tablinks" onclick="openTab(event, '03')"  >About</a></li>
+  <ul class="sidenav-right">
+  <li><span class="slir" id="tt"></span></li>
+  <li><span class="slir" id="demo"></span></li>  
+  </ul>
+  </ul><section>
+<div id="01" class="tabcontent">
+  <div id="idc"><br><br>FIRST YEAR</div><div id="content1">
+ <br><br><br><br><br><br><br>
+  <center><a href="#">>>>ODD SEMESTER</a></center><br>
+  <center><a href="#">>>>EVEN SEMESTER</a></center>
+  
+  
+  </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      
+  
+  <div id="idc2"><br><br>SECOND YEAR</div>
+  <div id="content2">
+     <br><br><br><br><br><br><br>
+ <center><a href="#">>>>ODD SEMESTER</a></center><br>
+  <center><a href="#">>>>EVEN SEMESTER</a></center>
+  
+</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+      
+   <div id="idc"><br><br>THIRD YEAR</div>
+  <div id="content1">
+  <br><br><br><br><br><br><br>
+  <center><a href="#">>>>ODD SEMESTER</a></center><br>
+  <center><a href="#">>>>EVEN SEMESTER</a></center>
+ 
+</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<div id="idc2"><br><br>FOURTH YEAR</div>
+  <div id="content2">
+     <br><br><br><br><br><br><br>
+ <center><a href="#">>>>ODD SEMESTER</a></center><br>
+  <center><a href="#">>>>EVEN SEMESTER</a></center>
+  
+</div>
+  </div></section>
+  <div id="s" class="tabcontent">
+  <div id="idcs"><br><br>SYLLABUS</div>
+  <div id="scontent"><br><br><br><br><br><br><br><br>
+ <center>To <a href="#">Click Here...</a></center><br>
+ <center>To Download The Syllabus...</center>
+ </div>
+ </div>
+ 
+ <div id="L" class="tabcontent">
+ 
+ <div id="idcs"><br><br>DIGITAL LIBRARY</div>
+ <div id="scontent">
+  <br><br><br><br><br>
+  <center><A  HREF="https://ndl.iitkgp.ac.in/">1.National Digital Library of India</A></center><BR>
+  <center><A HREF="https://archive.org/">2.Internet Archive</A></center><BR>
+  <center><A HREF="https://openlibrary.org/">3.Open Library</A></center><br><br>
+  <center>ALL MOST ALL <p style="color:red;display:inline;">BOOKS</p> ARE AVAILABLE HERE
+  USING<br><br> <div class="tooltip" style="color:red;display:inline;">CORRECT KEYWORD<span class="tooltiptext">
+  EX.. Advanced PHP </span></div> TO FIND BOOKS.</center>
+  </div>
+</div>
+<div id="03" class="tabcontent">
+<div id="idcs"><br><br>ABOUT US
+</div>
+<div id="scontent"><br><br><br><br><br>DEVELOPED BY:<br><center>V.SRINIVASAN</center><center>DEPARTMENT OF COMPUTER SCIENCE</center><center>ANJALAI AMMAL MAHALINGAM ENGINEERING COLLEGE</center><center>KOVILVENNI</center> 
+</div>
+</div>
+
+
+
+
+
+<script>
+/*script for tab content change*/
+function openTab(evt, TName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(TName).style.display = "block";
+  evt.currentTarget.className += " active";
+}document.getElementById("defaultOpen").click();
+/*Right click disable code*/
+var message="Function Disabled!";
+function clickIE4(){
+if (event.button==2){
+alert(message);
+return false;
+ }
+}
+function clickNS4(e){
+if (document.layers||document.getElementById&&!document.all){
+if (e.which==2||e.which==3){
+alert(message);
+return false;
+}
+}
+}
+if (document.layers){
+document.captureEvents(Event.MOUSEDOWN);
+document.onmousedown=clickNS4;
+}
+else if (document.all&&!document.getElementById){
+document.onmousedown=clickIE4;
+}
+document.oncontextmenu=new Function("alert(message);return false")
+
+	</script>
+</body>
+</html>

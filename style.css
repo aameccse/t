@@ -1,0 +1,240 @@
+*{
+    box-sizing: border-box;
+}
+  
+    
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* Style the header */
+header {
+	position:relative;
+    background-color:transparent;
+    text-shadow:
+  3px 3px 0 #000,
+ -1px -1px 0 #000,  
+  1px -1px 0 #000,
+ -1px 1px 0 #000,
+  1px 1px 0 #000;
+    text-align: center;
+    font-size: 25px;
+    color:white;
+    text-weight:bold;	
+}
+header section {
+	
+    content: "";
+    display: inline-block;
+    clear: both;
+}
+
+
+/*content split tools*/
+body 
+{background-image:url(a4.jpg);
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-size: cover;
+background-position: center;
+ height: 100%;
+}
+   
+#content1
+{    
+    text-align:center;
+	text-decoration:bold;
+	width:32%;
+	height:350px;
+	background-color:white;
+	float:left;
+	margin-right:2%;
+	margin-left:1%;
+}
+#idc
+{
+	width:34%;
+	height:100px;
+	background-color:orange;
+	text-align:center;
+	font-weight: bold;
+	font-size:20px;
+}
+
+#content2
+{
+	width:32%;
+	height:350px;
+	background-color:white;
+	float:left;
+	margin-left:66.9%;
+}
+
+#idc2
+{
+	margin-left:66%;
+	width:34%;
+	height:100px;
+	background-color:orange;
+	text-align:center;
+	font-weight: bold;
+	font-size:20px;
+}
+
+#scontent
+{
+	width:32%;
+	height:350px;
+	background-color:white;
+	margin-left:30%;
+	font-weight: bold;
+	
+	
+}
+#idcs
+{
+	margin-left:29%;
+	width:34%;
+	height:100px;
+	background-color:orange;
+	text-align:center;
+	font-weight: bold;
+	font-size:20px;
+}
+
+
+
+/* Style the list inside the menu */
+
+
+
+section {
+	padding:30px;
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/* menu bar controls*/
+ul.sidenav 
+{position:sticky;
+cursor:pointer;
+list-style-type: none;
+top:0;overflow: hidden;
+margin: 0;/* Safari */
+padding: 0;
+background-color: #333;
+}
+ul.sidenav-right li  
+{  float: right;
+list-style-type: none;
+top:0;overflow: hidden;
+margin: 0; /* Safari */
+position:sticky;
+padding: 0;
+}
+
+ul.sidenav li a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ 
+ul.sidenav li a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+ul.sidenav li a:hover:not(.active) {
+  background-color:  #111;
+  color: white;
+}
+.slir
+{
+display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}	
+/*popup tooltip*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media screen and (max-width: 900px) {
+  ul.sidenav {
+    width: 100%;
+    height: auto;
+    }
+  
+  ul.sidenav li a {
+    float: left;
+    padding: 15px;
+  }
+  
+  
+}
+@media screen and (max-width: 600px) {
+    #content1,#content2,#scontent { float:none;margin: 0 auto;width: 100%;height: auto;}
+	#content1,#content2{min-height: 350px;}
+	#scontent{min-height: 250px;}
+	#idcs{margin-left:0;} ul.sidenav {width: 100%;position:relative;overflow:hidden;height: auto;}
+	}
+@media screen and (max-width: 400px) {
+  ul.sidenav li a {cursor:pointer;
+    text-align: center;
+    float: none;
+  }
+}
+.tabcontent {
+  display: none;
+  
+       }
+
+a:link { font-weight:bold;
+	text-decoration:none;
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: blue;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
