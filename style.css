@@ -202,6 +202,8 @@ display: block;
   
 }
 @media screen and (max-width: 600px) {
+	body{background-image:url(a4.jpg);background-attachment:fixed;height: 100%;
+	}
     #content1,#content2,#scontent { float:none;margin: 0 auto;width: 100%;height: auto;}
 	#content1,#content2{min-height: 350px;}
 	#scontent{min-height: 250px;}
